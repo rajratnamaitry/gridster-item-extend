@@ -1,21 +1,23 @@
-# GridsterItemExtend
+# gridster-item-extend
+
+
+## Install
+
+`npm i gridster-item-extend`
+
   * src/app/app.module.ts
-  ```
+  ```typescript
   @NgModule({
-    declarations: [
-      AppComponent
-    ],
     imports: [
       GridsterItemExtendModule,
       GridsterModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+    ]
+    ...
   })
   export class AppModule { }
   ```  
   * src/app/app.component.ts
-  ```
+  ```typescript
   import { GridsterItemExtendComponent } from 'gridster-item-extend';
   @ViewChildren(GridsterItemExtendComponent) gridsterItem : QueryList<GridsterItemExtendComponent>;
   
@@ -27,8 +29,12 @@
     })
   }
   ```
-  # HTML
-  ```
+## Browser support
+
+What Angular supports [here](https://github.com/angular/angular)
+
+## How to use
+  ```html
   <gridster [options]="options">
     <gridster-item-extend [item]="item" *ngFor="let item of dashboard">
       <div>
@@ -37,3 +43,9 @@
     </gridster-item-extend>
   </gridster>
   ```
+
+### License
+
+The MIT License
+
+Copyright (c) 2022 rajratna maitry
