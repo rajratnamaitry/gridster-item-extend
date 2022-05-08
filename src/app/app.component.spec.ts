@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'gridster-item-extend'`, () => {
+  it(`should have as title 'gridster-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('gridster-item-extend');
+    expect(app.title).toEqual('gridster-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('gridster-item-extend app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('gridster-app app is running!');
   });
 });

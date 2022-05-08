@@ -6,6 +6,13 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+    "paths": {
+      "gridster-item-extend": [
+        "dist/gridster-item-extend/gridster-item-extend",
+        "dist/gridster-item-extend",
+        "projects/gridster-item-extend/src/public-api.ts"
+      ]
+    },
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",

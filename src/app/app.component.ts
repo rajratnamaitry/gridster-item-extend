@@ -7,7 +7,7 @@ import { GridsterConfig, GridsterItem, GridType, CompactType, DisplayGrid } from
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'gridster-item-extend';
+  title = 'gridster-app';
   options: GridsterConfig;
   dashboard: Array<GridsterItem>;
 
