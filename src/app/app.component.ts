@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, QueryList, ViewChildren } from '@angular/core';
 import { GridsterConfig, GridsterItem, GridType, CompactType, DisplayGrid } from 'angular-gridster2';
+import { GridsterItemExtendComponent } from 'gridster-item-extend';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
   title = 'gridster-app';
   options: GridsterConfig;
   dashboard: Array<GridsterItem>;
-
+  @ViewChildren(GridsterItemExtendComponent) gridsterItem : QueryList<GridsterItemExtendComponent>;
   ngOnInit(): void {
     this.options = {
       gridType: GridType.Fit,
@@ -113,6 +114,9 @@ export class AppComponent {
       },
       { cols: 1, rows: 1, y: 2, x: 6 }
     ];
+    setTimeout(()=>{
+      this.gridsterItem.forEach(e=> e.loadCurrentGridsterItem())
+    },4000)
   }
 
 }

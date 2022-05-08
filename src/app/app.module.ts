@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GridsterModule } from 'angular-gridster2';
+import { GridsterItemExtendModule } from 'gridster-item-extend';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,6 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    GridsterItemExtendModule,
     GridsterModule
   ],
   providers: [],
