@@ -1,6 +1,13 @@
 {
   "name": "gridster-item-extend",
   "version": "1.0.0",
+  "description": "Extensions of angular-gridster2 for overide functionality",
+  "keywords": ["angular-gridster2", "gridster extensions"],
+  "author": "rajratnamaitry@gmail.com",
+  "repository": {
+    "url": "https://github.com/rajratnamaitry/gridster-item-extend"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^11.2.14",
     "@angular/core": "^11.2.14"
