@@ -4,9 +4,11 @@
 `npm i gridster-item-extend`
 
 ## Example
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](assets/autoGridster.jpg)  |  ![](https://...Ocean.png)
+Without Auto Item Gridster-item    |
+:-------------------------:|
+![normalGridster](assets/normalGrid.jpg)  |
+Auto Item Gridster-item    |
+![autoGridster](assets/autoGridster.jpg) |
 
 ## How to use
 # Module import Declaration
