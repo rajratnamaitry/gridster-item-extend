@@ -6,7 +6,7 @@
 ## Example
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+![](assets/autoGridster.jpg)  |  ![](https://...Ocean.png)
 
 ## How to use
 # Module import Declaration
