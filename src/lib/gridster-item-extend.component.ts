@@ -9,8 +9,8 @@ import { GridsterComponent, GridsterItemComponent } from 'angular-gridster2';
     z-index: 1;
     position: absolute;
     overflow: hidden;
+    visibility:hidden;
     transition: .3s;
-    display: none;
     background:white;
     -webkit-user-select: text;
     user-select: text;
@@ -33,6 +33,7 @@ export class GridsterItemExtendComponent extends GridsterItemComponent {
     // overide method
   }
   loadCurrentGridsterItem(): void{ 
+    this.el.style.visibility = 'unset';
     this.gridster.addItem(this);
   }
   getNewRow(newHeight): number {
