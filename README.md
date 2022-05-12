@@ -3,6 +3,11 @@
 
 `npm i gridster-item-extend`
 
+## Example
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://...Dark.png)  |  ![](https://...Ocean.png)
+
 ## How to use
 # Module import Declaration
   * src/app/app.module.ts
