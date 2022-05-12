@@ -27,7 +27,7 @@ export class GridsterItemExtendComponent extends GridsterItemComponent {
   }
 
   ngOnInit(): void {
-    if(!this.gridster.options['loadItemCompOption']){
+    if(!this.gridster.options['customLoadItems']){
       this.loadCurrentGridsterItem();
     }
     // overide method

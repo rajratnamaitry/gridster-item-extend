@@ -24,13 +24,13 @@
   ngOnInit(): void {
     this.options = {
       /* Default value : false;
-      * If loadItemCompOption is not given then it will work as normal 
+      * If customLoadItems is not given then it will work as normal 
       * gridster-item component
       * 
-      * If loadItemCompOption set to true then you can control loading of
+      * If customLoadItems set to true then you can control loading of
       * gridster-item-extend component
       */
-      loadItemCompOption: true,
+      customLoadItems: true,
       ....
     }
   }
