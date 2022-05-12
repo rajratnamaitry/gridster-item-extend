@@ -20,7 +20,21 @@
   ```typescript
   import { GridsterItemExtendComponent } from 'gridster-item-extend';
   @ViewChildren(GridsterItemExtendComponent) gridsterItem : QueryList<GridsterItemExtendComponent>;
-  
+
+  ngOnInit(): void {
+    this.options = {
+      /* Default value : false;
+      * If loadItemCompOption is not given then it will work as normal 
+      * gridster-item component
+      * 
+      * If loadItemCompOption set to true then you can control loading of
+      * gridster-item-extend component
+      */
+      loadItemCompOption: true,
+      ....
+    }
+  }
+
   loadGridsterItem(){
     // child node list 
     this.gridsterItem.forEach(e=> {
