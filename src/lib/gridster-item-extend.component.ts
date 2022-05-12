@@ -36,7 +36,10 @@ export class GridsterItemExtendComponent extends GridsterItemComponent {
     this.el.style.visibility = 'unset';
     this.gridster.addItem(this);
   }
-  getNewRow(newHeight): number {
+  getNewRow(newHeight:number): number {
     return (newHeight / this.gridster.curRowHeight) + this.gridster.$options.margin;
+  }
+  setNewRow(newHeight:number): void{
+    this.$item.rows = this.getNewRow(newHeight);
   }
 }
