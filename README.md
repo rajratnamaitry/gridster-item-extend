@@ -10,6 +10,8 @@ Without Auto Item Gridster-item    |
 Auto Item Gridster-item    |
 ![autoGridster](assets/autoGridster.jpg) |
 
+*Auto item Gridster update height and remove scroll
+
 ## How to use
 # Module import Declaration
   * src/app/app.module.ts
