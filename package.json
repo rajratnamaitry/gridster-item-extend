@@ -1,6 +1,6 @@
 {
   "name": "gridster-item-extend",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Extensions of angular-gridster2 for overide functionality",
   "sideEffects": false,
   "keywords": [
