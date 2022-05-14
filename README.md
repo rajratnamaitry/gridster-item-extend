@@ -52,6 +52,12 @@ With gridster-item-extend    |
       */
       customLoadItems: true,
       ....
+      // Add more cols and rows so gridster can push down / shift other widgets
+      minCols: 100,
+      maxCols: 1000,
+      minRows: 100,
+      maxRows: 1000,
+      ...
     }
   }
   ngAfterViewInit(){
