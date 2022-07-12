@@ -4,6 +4,7 @@
 
 `npm i gridster-item-extend`
 
+## Angular v13.x support
 ## Example
 Without gridster-item-extend    |
 :-------------------------:|

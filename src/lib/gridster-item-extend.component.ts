@@ -16,7 +16,7 @@ import { GridsterComponent, GridsterItemComponent } from 'angular-gridster2';
     user-select: text;
   }`]
 })
-export class GridsterItemExtendComponent extends GridsterItemComponent {
+export class GridsterItemExtendComponent extends GridsterItemComponent implements OnInit {
 
   constructor(
     @Inject(ElementRef)el: ElementRef, 
@@ -26,7 +26,7 @@ export class GridsterItemExtendComponent extends GridsterItemComponent {
     super(el,gridster,renderer,zone);
   }
 
-  ngOnInit(): void {
+  override ngOnInit(): void {
     if(!this.gridster.options['customLoadItems']){
       this.loadCurrentGridsterItem();
     }
