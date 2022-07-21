@@ -1,16 +1,18 @@
 # gridster-item-extend
+## Extension of angular-gridster2 library.
 ## Install
 
 `npm i gridster-item-extend`
 
+## Angular v13.x support
 ## Example
-Without Auto Item Gridster-item    |
+Without gridster-item-extend    |
 :-------------------------:|
-![normalGridster](assets/normalGrid.jpg)  |
-Auto Item Gridster-item    |
-![autoGridster](assets/autoGridster.jpg) |
+![normal gridster-item](assets/normalGrid.jpg)  |
+With gridster-item-extend    |
+![auto gridster-item](assets/autoGridster.jpg) |
 
-*Auto item Gridster update height and remove scroll
+* gridster-item-extend Library can Auto update height and remove scroll.
 
 ## How to use
 # Module import Declaration
@@ -51,6 +53,12 @@ Auto Item Gridster-item    |
       */
       customLoadItems: true,
       ....
+      // Add more cols and rows so gridster can push down / shift other widgets
+      minCols: 100,
+      maxCols: 1000,
+      minRows: 100,
+      maxRows: 1000,
+      ...
     }
   }
   ngAfterViewInit(){
