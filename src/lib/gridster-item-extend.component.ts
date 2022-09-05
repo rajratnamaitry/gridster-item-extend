@@ -11,7 +11,6 @@ import { GridsterComponent, GridsterItemComponent } from 'angular-gridster2';
     overflow: hidden;
     visibility:hidden;
     transition: .3s;
-    background:white;
     -webkit-user-select: text;
     user-select: text;
   }`]
@@ -19,27 +18,27 @@ import { GridsterComponent, GridsterItemComponent } from 'angular-gridster2';
 export class GridsterItemExtendComponent extends GridsterItemComponent implements OnInit {
 
   constructor(
-    @Inject(ElementRef)el: ElementRef, 
-    gridster: GridsterComponent, 
-    @Inject(Renderer2) renderer: Renderer2, 
-    @Inject(NgZone) zone: NgZone){
-    super(el,gridster,renderer,zone);
+    @Inject(ElementRef) el: ElementRef,
+    gridster: GridsterComponent,
+    @Inject(Renderer2) renderer: Renderer2,
+    @Inject(NgZone) zone: NgZone) {
+    super(el, gridster, renderer, zone);
   }
 
   override ngOnInit(): void {
-    if(!this.gridster.options['customLoadItems']){
+    if (!this.gridster.options['customLoadItems']) {
       this.loadCurrentGridsterItem();
     }
     // overide method
   }
-  loadCurrentGridsterItem(): void{ 
+  loadCurrentGridsterItem(): void {
     this.el.style.visibility = 'unset';
     this.gridster.addItem(this);
   }
-  getNewRow(newHeight:number): number {
+  getNewRow(newHeight: number): number {
     return (newHeight / this.gridster.curRowHeight) + this.gridster.$options.margin;
   }
-  setNewRow(newHeight:number): void{
+  setNewRow(newHeight: number): void {
     this.$item.rows = this.getNewRow(newHeight);
   }
 }

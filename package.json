@@ -1,6 +1,6 @@
 {
   "name": "gridster-item-extend",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "Extensions of angular-gridster2 for overide functionality",
   "sideEffects": false,
   "keywords": [
@@ -13,7 +13,7 @@
     "resize",
     "drag&drop",
     "widgets",
-    "angular-gridster2", 
+    "angular-gridster2",
     "gridster extensions"
   ],
   "authors": ["rajratna maitry"],
